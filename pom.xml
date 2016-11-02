@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.diva-e.firstspirit</groupId>
+	<artifactId>firstspirit-dependencies</artifactId>
+	<version>1.0.3</version>
+	<packaging>pom</packaging>
+
+	<name>FirstSpirit Dependencies</name>
+	<description>Project for including FirstSpirit artifacts in maven projects.</description>
+
+	<url>https://github.com/diva-e/firstspirit-dependencies</url>
+
+	<inceptionYear>2016</inceptionYear>
+
+	<developers>
+		<developer>
+			<name>Christian Stornowski</name>
+			<id>ChristianStornowski</id>
+			<email>christian.stornowski@diva-e.com</email>
+			<organization>diva-e</organization>
+			<organizationUrl>https://www.diva-e.com</organizationUrl>
+		</developer>
+	</developers>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<issueManagement>
+		<system>github</system>
+		<url>https://github.com/diva-e/firstspirit-dependencies/issues</url>
+	</issueManagement>
+
+	<properties>
+		<firstSpiritVersion>[4.2,5.2)</firstSpiritVersion>
+	</properties>
+	
+	<!-- === Dependency Management === -->
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>de.espirit.firstspirit</groupId>
+				<artifactId>fs-api</artifactId>
+				<version>${firstSpiritVersion}</version>
+			</dependency>
+			<dependency>
+				<groupId>de.espirit.firstspirit</groupId>
+				<artifactId>fs-access</artifactId>
+				<version>${firstSpiritVersion}</version>
+			</dependency>
+			<dependency>
+				<groupId>de.espirit.firstspirit</groupId>
+				<artifactId>fs-client</artifactId>
+				<version>${firstSpiritVersion}</version>
+			</dependency>
+			<dependency>
+				<groupId>de.espirit.firstspirit</groupId>
+				<artifactId>fs-server</artifactId>
+				<version>${firstSpiritVersion}</version>
+			</dependency>
+			<dependency>
+				<groupId>de.espirit.firstspirit</groupId>
+				<artifactId>fs-webedit</artifactId>
+				<version>${firstSpiritVersion}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>

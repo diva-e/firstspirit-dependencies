@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.diva-e.firstspirit</groupId>
 	<artifactId>firstspirit-dependencies</artifactId>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 	<packaging>pom</packaging>
 
 	<name>FirstSpirit Dependencies</name>
@@ -36,7 +36,7 @@
 	</issueManagement>
 
 	<properties>
-		<firstSpiritVersion>[4.2,5.2)</firstSpiritVersion>
+		<firstSpiritVersion>[5.1,5.2)</firstSpiritVersion>
 	</properties>
 	
 	<!-- === Dependency Management === -->

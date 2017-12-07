@@ -1,0 +1,17 @@
+group = 'com.diva-e.firstspirit'
+version = '1.0.6-SNAPSHOT'
+
+description = "FirstSpirit Dependencies"
+
+group 'com.diva-e.firstspirit'
+
+ext {
+    firstSpiritVersion = '[5.2,5.3['
+    libraries = [
+        fs_api    : "de.espirit.firstspirit:fs-api:${firstSpiritVersion}",
+        fs_access : "de.espirit.firstspirit:fs-access:${firstSpiritVersion}",
+        fs_client : "de.espirit.firstspirit:fs-client:${firstSpiritVersion}",
+        fs_server : "de.espirit.firstspirit:fs-server:${firstSpiritVersion}",
+        fs_webedit: "de.espirit.firstspirit:fs-webedit:${firstSpiritVersion}"
+    ]
+}
